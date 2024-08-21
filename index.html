@@ -131,7 +131,7 @@
             </div>
         </div>
 
-        <section class="my-10">
+        <section class="my-10 md:container mx-auto">
             <!-- How we works -->
              <div class="text-center">
                 <p class="text-sm inline-block mx-auto bg-white py-3 px-5 rounded-full font-bold"><i class="fa-solid fa-arrow-right"></i> How we works</p>
@@ -167,7 +167,7 @@
         </section>
      </section>
 
-     <section class="bg-dark-2 p-7">
+     <section class="md:container mx-auto p-7">
         <div class="text-center">
             <p class="text-sm inline-block mx-auto bg-secondary-color py-3 px-5 rounded-full font-bold"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</p>
             <h1 class="font-extrabold text-4xl my-4">Our Latest Portfolio</h1>
@@ -211,6 +211,34 @@
         </div>
      </section>
 
+     <section class="bg-message-bg bg-cover w-full h-auto">
+        <div  class="md:container md:mx-auto py-9">
+            <div class="text-center">
+                <p class="text-sm inline-block mx-auto bg-secondary-color py-3 px-5 rounded-full font-bold"><i class="fa-solid fa-arrow-right"></i> About Us</p>
+                <h1 class="text-4xl font-extrabold my-4">Let’s Discuss Next Project</h1>
+                <p class="text-sm max-w-xl mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div class="container mx-auto mt-5">
+                <form action="#" class="w-full mx-auto grid grid-cols-1 gap-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <input class="py-3 px-5 rounded-full" type="text" placeholder="First Name*" required>
+                        <input class="py-3 px-5 rounded-full" type="text" placeholder="Last Name*" required>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <input class="py-3 px-5 rounded-full" type="number" placeholder="Phone Number*" required>
+                        <input class="py-3 px-5 rounded-full" type="email" placeholder="Email Number*" required>
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <textarea class="py-3 px-5 rounded-3xl" rows="8"></textarea>
+                    </div>
+                    <div class="w-full cursor-pointer">
+                        <a class="text-sm inline-block mx-auto bg-primary-color hover:bg-secondary-color w-full text-center py-3 px-5 rounded-full font-extrabold">Send Mail <i class="fa-solid fa-arrow-right bg-black p-2 text-white ml-2 rounded-full"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+     </section>
+
 </main>
 <!-- Customization -->
 <script>
@@ -223,7 +251,12 @@
             'secondary-color' : 'rgba(171, 239, 95, 0.5)',
             'dark-1' : 'rgba(115, 115, 115, 1)',
             'dark-2' : 'rgba(233, 233, 233, 1)',
-          }
+          },
+          backgroundImage: {
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+        'message-bg' : "url('assets/bg.jpg')"
+      }
         }
       }
     }
