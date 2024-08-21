@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Manrope google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font awesome kit -->
+    <script src="https://kit.fontawesome.com/7d97467ebb.js" crossorigin="anonymous"></script>
+    <title>Rinterio</title>
+    <!-- Daisy UI + Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- add font -->
+     <style>
+        body{
+            font-family: "Manrope", sans-serif;
+        }
+     </style>
+</head>
+<body>
+    
+    <!-- Header section -->
+     <header class="md:container md:mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  
+                  <a class="text-xl font-extrabold cursor-pointer"><i class="fa-solid fa-arrow-right bg-primary-color p-2 rounded-full"></i> Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden md:flex items-center gap-5">
+                        <i class="fa-solid fa-magnifying-glass p-4 border border-dark-2 text-dark-1 rounded-full"></i>
+                        <i class="fa-solid fa-cart-shopping p-4 border border-dark-2 text-dark-1 rounded-full"></i>
+                        <a class="btnmd:flex justify-center items-center bg-primary-color font-extrabold hover:bg-secondary-color py-3 px-5 rounded-full cursor-pointer">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white ml-2 p-2 rounded-full"></i></a>
+                    </div>
+                  <!-- Dropdown -->
+                  <div class="dropdown border border-5 border-red-600 relative">
+                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute top-5 right-0">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+     </header>
+
+<!-- Customization -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color' : '#ABEF5F',
+            'secondary-color' : 'rgba(171, 239, 95, 0.5)',
+            'dark-1' : 'rgba(115, 115, 115, 1)',
+            'dark-2' : 'rgba(233, 233, 233, 1)',
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>
